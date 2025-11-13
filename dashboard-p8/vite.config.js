@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
+// без defineConfig, просто звичайний об'єкт
+export default {
   plugins: [react()],
-  base: '/dashboard-p8/',
+  base: '/dashboard-p8/',   // назва твого репозиторію на GitHub
   build: {
     outDir: 'docs',
   },
-})
+}
